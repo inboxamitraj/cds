@@ -1,1 +1,0 @@
-Modules for installing addons eg. external-dns or kong in EKS cluster
