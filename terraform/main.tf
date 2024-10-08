@@ -52,7 +52,7 @@ module "eks" {
   self_managed_node_groups = {
     # comment here
     one = {
-      name          = "node-group-t2.medium"
+      name          = "node-group-one"
       instance_type = var.instance_type
       min_size      = var.min_nodes
       desired_size  = var.desired_nodes
