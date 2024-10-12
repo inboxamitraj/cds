@@ -1,16 +1,13 @@
-# service yaml #
+--- 
 apiVersion: v1
 kind: Service
 metadata:
   name: app
-  labels:
-    name: app
 spec:
   ports:
-    - name: #https port name
-      port: 80
-      protocol: TCP
-      targetPort: 8501
+  - port: 80
+    protocol: TCP
+    targetPort: 8501
   selector:
     name: app
   type: LoadBalancer
